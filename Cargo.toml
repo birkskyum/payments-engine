@@ -1,0 +1,11 @@
+[package]
+name = "payments-engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["Birk Skyum"]
+
+[dependencies]
+clap = { version = "3.2.16", features = ["derive"] }
+csv = "1.1.6"
+polars = "0.23.1"
+serde = { version = "1.0.142", features = ["derive"] }
