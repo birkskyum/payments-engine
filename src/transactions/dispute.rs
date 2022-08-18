@@ -1,4 +1,4 @@
-use crate::accounts::{AccountColumn, AccountList};
+use crate::accounts::{AccountList};
 use polars::prelude::DataFrame;
 
 use crate::{
@@ -26,7 +26,7 @@ pub fn dispute(
                     // get relevant client
                     let account = get_account(accounts, transaction.client);
 
-                    if !accounts.get_locked() {
+                    if !account.get_locked() {
                         // add transaction to dispute
                         disputes.push(original_transaction);
 
