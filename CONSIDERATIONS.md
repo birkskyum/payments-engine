@@ -20,7 +20,7 @@ It used to accounts data in csv-format in output[]().rs and to read accounts dat
 
 ### Overall structure
 
-Each type of transactions have it's own function, that will take a reference to the existing list of accounts and disputes, and a execute the transaction. A new list of accounts is being returned. I chose this structure because it's easy to test each type of transaction, and because it avoids having too much responsibility in a single file.
+Each type of transaction has it's own file and function, which will take a reference to the existing list of accounts and disputes, and a execute the transaction. A new list of accounts is being returned. I chose this structure because it's easy to test each type of transaction, and because it avoids having too much responsibility in a single file.
 
 ### Testing
 
